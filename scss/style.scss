@@ -1,0 +1,523 @@
+body {
+  font-family: sans-serif;
+  margin: 0%;}
+
+
+  .mobile{
+    display: none;
+  }
+
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "footer footer footer";
+    grid-template-rows: 500px 1fr 1fr 150px; 
+    grid-template-columns: 20% auto 400px;
+ }
+
+ 
+ header {
+    grid-area: header;
+    background-image: url(../comida-rapida-casera.png);
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .nav{
+      li {
+        
+        list-style: none;
+        padding: 10px;
+        padding-bottom: 25px;
+        float: right;
+        text-align: center;
+        justify-content: center;
+      }
+      a {
+        font-size: large;
+        font-weight: 200px;
+        padding-right: 10px;
+        float: right;
+        color:rgb(5, 45, 133);
+        font-family: fantasy;
+        
+      }
+    
+    }
+    
+    }
+    
+   
+      nav a:hover {
+        color: rgb(76, 0, 99);
+      }
+
+    .img-header{
+        
+        
+        .logo{
+          display: flex;
+          float: right;
+            img{
+            height: 10vh;
+            margin-right: 10vh;
+          }
+    
+      }
+    }
+    
+      .h1-header{
+        display: flex;
+         justify-content: center;
+          text-align: center;
+
+          h1{
+            color: #2C5364;
+          }
+          
+
+        a{
+          height: 10vh;
+          width: 10vw;
+          text-decoration: none;
+       
+        }
+    }
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ section#productos {
+    grid-area: productos; 
+    display: flex;
+    margin-top: 35px;
+      width: 100%;
+      height: 430px;
+  
+      img{
+        
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+  
+        
+      }
+      img:hover{
+         cursor: pointer;
+         width: 500px;
+         opacity: 1;
+         filter: contrast(120%);
+      }
+   }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ section#servicios {
+    grid-area: servicios;  
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+    padding: 7px;
+
+
+
+ 
+    .ubicacion{
+      display: block;
+    }
+    
+    
+
+    .logo-final{
+      justify-content: center;
+      text-align: center;
+      
+      
+      
+      
+      .logoo{
+        img{
+          margin-top: 125px;
+          
+          height: 15vh;
+          width: 15vh;
+        
+        }
+
+      }
+      
+    }
+
+   .conocer{
+    display: block;
+    
+   }
+
+  
+   
+}
+
+
+
+
+ 
+ nav {
+    grid-area: nav;
+
+.nuestro_hogar{
+   text-align: center;
+   justify-content: center;
+}
+
+.lugar{
+   text-align: center;
+   justify-content: center;
+   
+
+   img{
+      margin: 10px;
+      height: auto;
+      width: 300px;
+   }
+
+
+}
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ aside {
+    grid-area: publicidad;
+
+    background-image: url(../discoteca.jpg);
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    justify-content: center;
+    align-items: center;
+
+    .shows{
+      margin-top: 7px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: aqua;
+
+
+      h3{
+        margin-top: 45px;
+      }
+     
+    }
+   
+    .objetivo{
+   
+     
+  
+     .card{
+      width: 90%;
+      margin: 20px;
+      height: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      box-shadow: 0px 1px 10px;
+      cursor: default;
+      transition: all 400ms ease;
+      text-align: center;
+      justify-content: center;
+  
+      figure{
+        img{
+         margin-top: 10px;
+          width: 70%;
+          height: 300px;
+          border-radius: 6px;
+          
+        }
+  
+      }
+      
+  
+      .Contenido{
+        padding: 15px;
+        text-align: center;
+        justify-content: center;
+
+        
+  
+       
+  
+        h2{
+          font-weight: 400;
+          margin-bottom: 15px;
+          a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            color: rgb(245, 9, 162);
+            border: 1px solid rgba(215, 185, 248, 0.904);
+            background: #9796f0;  /* fallback for old browsers */
+            
+          }
+ 
+        }
+        a:hover{
+          background: #ee9ca7;}
+      
+      }
+  
+    }
+  
+    .card:hover{
+      box-shadow: 5px 5px 20px;
+      transform: translateY(-3%);
+    
+    }
+     }
+
+     
+ }
+
+
+
+ footer {
+  grid-area: footer;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+        align-items: center;
+
+        background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  .derechos{
+    font-size: 25px;
+  }
+
+  .logo-pie{
+
+    .logooo{
+      img{
+        
+        
+        height: 7vh;
+        width: 7vh;
+      
+      }
+
+  }
+
+  }
+
+
+
+
+
+
+}
+
+
+
+@import "menu";
+@import "contacto";
+
+
+
+@media only screen and (max-width:1565px){
+  body{
+    width: 100%;
+  }
+
+  .img-header{
+        
+        
+    .logo{
+      display: flex;
+      float: right;
+        img{
+        height: 10vh;
+        margin-right: 0;
+      }
+
+  }
+}
+  section#productos {
+    grid-area: productos; 
+    display: flex;
+    margin-top: 35px;
+      width: 100%;
+      height: 430px;
+  
+      img{
+        
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+  
+        
+      }
+      img:hover{
+         cursor: pointer;
+         width: 500px;
+         opacity: 1;
+         filter: contrast(120%);
+      }
+   }
+
+
+   nav {
+    grid-area: nav;
+
+.nuestro_hogar{
+   text-align: center;
+   justify-content: center;
+}
+
+.lugar{
+   text-align: center;
+   justify-content: center;
+   
+
+   img{
+      margin: 5px;
+      height: auto;
+      width: 200px;
+   }
+
+
+}
+
+
+
+
+ }
+    
+
+}
+
+
+
+
+@media only screen and (max-width:1058px){
+  body{
+    width: 100%;
+  }
+  nav {
+    grid-area: nav;
+
+.nuestro_hogar{
+   text-align: center;
+   justify-content: center;
+}
+
+.lugar{
+   text-align: center;
+   justify-content: center;
+   
+
+   img{
+      margin: 2 5px;
+      height: 10vh;
+      width: 100px;
+   }
+
+
+}
+
+
+
+
+ }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:991px) {
+  .mobile{
+    display: block;
+  }
+
+.h1-header{
+  .desktop{
+    display: none;
+  }
+}
+
+
+}
+
+ 

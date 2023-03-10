@@ -1,0 +1,333 @@
+body {
+  font-family: sans-serif;
+  margin: 0%; }
+
+.mobile {
+  display: none; }
+
+#grilla {
+  display: grid;
+  grid-template-areas: "header header header" "nav productos publicidad" "nav servicios publicidad" "footer footer footer";
+  grid-template-rows: 500px 1fr 1fr 150px;
+  grid-template-columns: 20% auto 400px; }
+
+header {
+  grid-area: header;
+  background-image: url(../comida-rapida-casera.png);
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  header .nav li {
+    list-style: none;
+    padding: 10px;
+    padding-bottom: 25px;
+    float: right;
+    text-align: center;
+    justify-content: center; }
+  header .nav a {
+    font-size: large;
+    font-weight: 200px;
+    padding-right: 10px;
+    float: right;
+    color: #052d85;
+    font-family: fantasy; }
+
+nav a:hover {
+  color: #4c0063; }
+
+.img-header .logo {
+  display: flex;
+  float: right; }
+  .img-header .logo img {
+    height: 10vh;
+    margin-right: 10vh; }
+
+.h1-header {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .h1-header h1 {
+    color: #2C5364; }
+  .h1-header a {
+    height: 10vh;
+    width: 10vw;
+    text-decoration: none; }
+
+section#productos {
+  grid-area: productos;
+  display: flex;
+  margin-top: 35px;
+  width: 100%;
+  height: 430px; }
+  section#productos img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease; }
+  section#productos img:hover {
+    cursor: pointer;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%); }
+
+section#servicios {
+  grid-area: servicios;
+  display: flex;
+  justify-content: space-between;
+  margin: 7px;
+  padding: 7px; }
+  section#servicios .ubicacion {
+    display: block; }
+  section#servicios .logo-final {
+    justify-content: center;
+    text-align: center; }
+    section#servicios .logo-final .logoo img {
+      margin-top: 125px;
+      height: 15vh;
+      width: 15vh; }
+  section#servicios .conocer {
+    display: block; }
+
+nav {
+  grid-area: nav; }
+  nav .nuestro_hogar {
+    text-align: center;
+    justify-content: center; }
+  nav .lugar {
+    text-align: center;
+    justify-content: center; }
+    nav .lugar img {
+      margin: 10px;
+      height: auto;
+      width: 300px; }
+
+aside {
+  grid-area: publicidad;
+  background-image: url(../discoteca.jpg);
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+  aside .shows {
+    margin-top: 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aqua; }
+    aside .shows h3 {
+      margin-top: 45px; }
+  aside .objetivo .card {
+    width: 90%;
+    margin: 20px;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0px 1px 10px;
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    justify-content: center; }
+    aside .objetivo .card figure img {
+      margin-top: 10px;
+      width: 70%;
+      height: 300px;
+      border-radius: 6px; }
+    aside .objetivo .card .Contenido {
+      padding: 15px;
+      text-align: center;
+      justify-content: center; }
+      aside .objetivo .card .Contenido h2 {
+        font-weight: 400;
+        margin-bottom: 15px; }
+        aside .objetivo .card .Contenido h2 a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: #f509a2;
+          border: 1px solid rgba(215, 185, 248, 0.904);
+          background: #9796f0;
+          /* fallback for old browsers */ }
+      aside .objetivo .card .Contenido a:hover {
+        background: #ee9ca7; }
+  aside .objetivo .card:hover {
+    box-shadow: 5px 5px 20px;
+    transform: translateY(-3%); }
+
+footer {
+  grid-area: footer;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  footer .derechos {
+    font-size: 25px; }
+  footer .logo-pie .logooo img {
+    height: 7vh;
+    width: 7vh; }
+
+body {
+  font-family: sans-serif;
+  margin: 0%; }
+
+.version-mobile {
+  display: none; }
+
+.version-desktop header {
+  height: 55vh; }
+
+.menues {
+  display: flex; }
+  .menues .card {
+    width: 90%;
+    margin: 20px;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba(237, 227, 248, 0.904);
+    box-shadow: 0px 1px 10px;
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    justify-content: center; }
+    .menues .card figure img {
+      margin-top: 10px;
+      width: 70%;
+      height: 300px;
+      border-radius: 6px; }
+    .menues .card .Contenido {
+      padding: 15px;
+      text-align: center;
+      justify-content: center; }
+      .menues .card .Contenido h2 {
+        font-weight: 400;
+        margin-bottom: 15px; }
+        .menues .card .Contenido h2 a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: #f509a2;
+          border: 1px solid rgba(215, 185, 248, 0.904);
+          background: #9796f0;
+          /* fallback for old browsers */ }
+      .menues .card .Contenido a:hover {
+        background: #ee9ca7; }
+  .menues .card:hover {
+    box-shadow: 5px 5px 20px;
+    transform: translateY(-3%); }
+
+@media only screen and (max-width: 700px) {
+  .version-mobile {
+    display: block; }
+  .version-desktop {
+    display: none; } }
+
+.contacto {
+  background-image: url(../drew.webp);
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .contacto h3 {
+    justify-content: center;
+    text-align: center;
+    background: #A770EF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .contacto .redes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    justify-content: space-around; }
+    .contacto .redes .insta img {
+      height: 10vh;
+      width: 5vw; }
+    .contacto .redes .insta p {
+      color: #A770EF; }
+    .contacto .redes .wpp img {
+      height: 10vh;
+      width: 5vw; }
+    .contacto .redes .wpp p {
+      color: #A770EF; }
+
+@media only screen and (max-width: 1565px) {
+  body {
+    width: 100%; }
+  .img-header .logo {
+    display: flex;
+    float: right; }
+    .img-header .logo img {
+      height: 10vh;
+      margin-right: 0; }
+  section#productos {
+    grid-area: productos;
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+    height: 430px; }
+    section#productos img {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .8;
+      transition: .5s ease; }
+    section#productos img:hover {
+      cursor: pointer;
+      width: 500px;
+      opacity: 1;
+      filter: contrast(120%); }
+  nav {
+    grid-area: nav; }
+    nav .nuestro_hogar {
+      text-align: center;
+      justify-content: center; }
+    nav .lugar {
+      text-align: center;
+      justify-content: center; }
+      nav .lugar img {
+        margin: 5px;
+        height: auto;
+        width: 200px; } }
+
+@media only screen and (max-width: 1058px) {
+  body {
+    width: 100%; }
+  nav {
+    grid-area: nav; }
+    nav .nuestro_hogar {
+      text-align: center;
+      justify-content: center; }
+    nav .lugar {
+      text-align: center;
+      justify-content: center; }
+      nav .lugar img {
+        margin: 2 5px;
+        height: 10vh;
+        width: 100px; } }
+
+@media only screen and (max-width: 991px) {
+  .mobile {
+    display: block; }
+  .h1-header .desktop {
+    display: none; } }

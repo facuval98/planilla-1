@@ -1,0 +1,54 @@
+.contacto{
+    background-image: url(../drew.webp);
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    h3{
+     justify-content: center;
+     text-align: center;
+     background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .redes{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 100px;
+        justify-content: space-around;
+    
+    
+    
+
+    .insta{
+        img{
+            height: 10vh;
+            width: 5vw;
+            
+        }
+        p{
+            color: #A770EF;
+        }
+    }
+
+    .wpp{
+        img{
+            height: 10vh;
+            width: 5vw;
+
+        }
+        p{
+            color: #A770EF;
+
+        }
+    }
+}
+   
+    
+}
